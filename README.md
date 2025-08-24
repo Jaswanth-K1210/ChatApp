@@ -67,40 +67,42 @@ ChatApp/
 ### 1️⃣ Backend (p2p-backend)
 
 cd p2p-backend
+
 npm install
+
 Create a .env file inside p2p-backend/ with:
 
-env
-Copy
-Edit
 PORT=5000
-MONGO_URI=your-mongodb-uri
-FIREBASE_PROJECT_ID=your-firebase-project-id
-Run backend:
 
-bash
-Copy
-Edit
+MONGO_URI=your-mongodb-uri
+
+FIREBASE_PROJECT_ID=your-firebase-project-id
+
+Run backend:
 npm start
+
 2️⃣ Frontend (p2p-chat-frontend)
-bash
-Copy
-Edit
+
 cd p2p-chat-frontend
+
 npm install
+
 Create a .env file inside p2p-chat-frontend/ with:
 
-env
-Copy
-Edit
 VITE_API_URL=http://localhost:5000
-VITE_FIREBASE_API_KEY=your-firebase-api-key
-VITE_FIREBASE_AUTH_DOMAIN=your-app.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=your-project-id
-Run frontend:
 
+VITE_FIREBASE_API_KEY=your-firebase-api-key
+
+VITE_FIREBASE_AUTH_DOMAIN=your-app.firebaseapp.com
+
+VITE_FIREBASE_PROJECT_ID=your-project-id
+
+Run frontend:
+npm run
 
 🔒 Security Notes
+
+
 Firebase Service Account JSON should not be committed.
 
 Add sensitive files to .gitignore:
