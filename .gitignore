@@ -1,0 +1,8 @@
+# Ignore Firebase / Service Account keys
+*.json
+!package.json
+!tsconfig.json
+
+# Or specifically ignore Firebase admin key
+p2p-backend/chat-app-4500f-firebase-adminsdk-*.json
+
