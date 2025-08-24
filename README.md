@@ -27,21 +27,36 @@ Messages are **peer-to-peer** (not stored on the server), while the server only 
 ChatApp/
 │
 ├── p2p-backend/ # Node.js + Express + MongoDB + Firebase Admin
+
 │ ├── src/
+
 │ │ ├── models/ # Mongoose models
+
 │ │ ├── routes/ # Express routes (roomRoutes, secureRoutes)
+
 │ │ ├── utils/ # Cleanup utility
+
 │ │ ├── socket.js # WebSocket / WebRTC signaling
+
 │ │ └── server.js # Main entry point
+
 │ └── package.json
+
 │
 ├── p2p-chat-frontend/ # React (Vite) + Tailwind + Firebase
+
 │ ├── src/
+
 │ │ ├── components/ # UI components (Login, Home, Popups, etc.)
+
 │ │ ├── firebase.js # Firebase config
+
 │ │ ├── App.jsx # Main App
+
 │ │ └── usePeer.jsx # WebRTC hooks
+
 │ └── package.json
+
 │
 └── README.md
 
